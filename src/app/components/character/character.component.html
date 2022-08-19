@@ -1,0 +1,7 @@
+<ul class="characters">
+  <li class="characters__item" *ngFor="let character of characters; let i = index">
+    <img *ngIf="i + 1 === characters.length" [src]="character.image" [alt]="character.name" #theLastPage>
+    <img *ngIf="i + 1 != characters.length" [src]="character.image" [alt]="character.name">
+  </li>
+</ul>
+<p class="loading">Loading...</p>

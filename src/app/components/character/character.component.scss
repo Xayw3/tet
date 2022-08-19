@@ -1,0 +1,35 @@
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.loading {
+  text-align: center;
+  font-size: 21px;
+}
+
+@media screen and (max-width: 1200px) {
+  .characters__item {
+    max-width: 30%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .characters__item {
+    max-width: 49%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .characters__item {
+    max-width: 100%;
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
