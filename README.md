@@ -8,6 +8,5 @@
    UI bibliotēku izmantošana pēc jūsu vēlmēm, priekšrocību dodam Bootstrap.
    
 
-
-<img src="[https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif](https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif)" width="40" height="40" />
+<img src="https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif" width="80" height="80" />
 
