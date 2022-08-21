@@ -7,7 +7,7 @@
 3. Lietojums jāizstrādā izmantojot HTML5, SCSS un Angular ietvaru. Lapai jābūt responsīvai.
    UI bibliotēku izmantošana pēc jūsu vēlmēm, priekšrocību dodam Bootstrap.
    
- Link: https://6302a6ee86151d000ac798f1--xayw3-tet.netlify.app/
+ Link: https://xayw3-tet.netlify.app/
    
 
 <img src="https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif" width="80" height="80" />
