@@ -10,7 +10,7 @@ import { CharacterApi } from "../models/characters.model";
 export class CharactersService {
   constructor(private http: HttpClient) {}
 
-  getAll(page: number): Observable<CharacterApi> {
+  public getAll(page: number): Observable<CharacterApi> {
     return this.http
       .get<CharacterApi>(`https://rickandmortyapi.com/api/character?page=${page}`)
       .pipe(delay(1000))

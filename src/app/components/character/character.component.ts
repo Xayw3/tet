@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from "@angular/core"; 
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, QueryList, ViewChildren } from "@angular/core"; 
+import { Subject, takeUntil } from "rxjs";
 import { Character } from "src/app/models/characters.model";
 import { CharactersService } from "src/app/services/characters.service";
 
@@ -8,11 +9,13 @@ import { CharactersService } from "src/app/services/characters.service";
   styleUrls: ['./character.component.scss']
 })
 
-export class CharacterComponent implements OnInit, AfterViewInit {
+export class CharacterComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChildren('theLastPage', { read: ElementRef })
   theLastPage: QueryList<ElementRef>
 
-  characters: Character[] | any = []
+  destroy$: Subject<boolean> = new Subject<boolean>();
+
+  characters: Character[] = []
   totalPages: number
   currentPage: number = 1
   observer: any
@@ -24,25 +27,29 @@ export class CharacterComponent implements OnInit, AfterViewInit {
     this.intersectionObserver()
   }
 
-  ngAfterViewInit() {
-    this.theLastPage.changes.subscribe(characters => {
+  ngAfterViewInit(): void {
+    this.theLastPage.changes
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(characters => {
       if (characters.last) this.observer.observe(characters.last.nativeElement)
     })
   }
 
-  getCharacters() {
-    this.charactersService.getAll(this.currentPage).subscribe(characters => {
+  private getCharacters(): void {
+    this.charactersService.getAll(this.currentPage)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe(characters => {
       const charactersData: Character[] | any = characters.results
 
       this.totalPages = characters.info.pages
 
-      charactersData.forEach((el: any) => {
+      charactersData.forEach((el: Character) => {
         this.characters.push(el)
       })
     })
   }
 
-  intersectionObserver() {
+  private intersectionObserver(): void {
     let options = {
       root: null,
       rootMargin: '0px',
@@ -57,5 +64,10 @@ export class CharacterComponent implements OnInit, AfterViewInit {
         }
       }
     }, options)
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next(true);
+    this.destroy$.unsubscribe();
   }
 }
