@@ -9,4 +9,4 @@
    
 ![Alt text](https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif)
 
-<img src="https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif" width="40" height="40" />
+<img src="https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif" width="40" height="40">
