@@ -7,4 +7,4 @@
 3. Lietojums jāizstrādā izmantojot HTML5, SCSS un Angular ietvaru. Lapai jābūt responsīvai.
    UI bibliotēku izmantošana pēc jūsu vēlmēm, priekšrocību dodam Bootstrap.
 
-<div style="width:100%;height:0;padding-bottom:53%;position:relative;"><img src="https://giphy.com/embed/VKcGywNWMqTpDUON9g" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></img></div><p><a href="https://giphy.com/gifs/VKcGywNWMqTpDUON9g">via GIPHY</a></p>
+![](https://giphy.com/embed/VKcGywNWMqTpDUON9g) 
