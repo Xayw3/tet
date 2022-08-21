@@ -8,3 +8,4 @@
    UI bibliotēku izmantošana pēc jūsu vēlmēm, priekšrocību dodam Bootstrap.
 
 ![Alt Text](https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif)
+<img src="https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif" width="40" height="40" />
