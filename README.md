@@ -7,7 +7,6 @@
 3. Lietojums jāizstrādā izmantojot HTML5, SCSS un Angular ietvaru. Lapai jābūt responsīvai.
    UI bibliotēku izmantošana pēc jūsu vēlmēm, priekšrocību dodam Bootstrap.
    
-![github-small](https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif)
 
-<img src="https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif" width="40" height="40">
+<img src="https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif"/>
 
