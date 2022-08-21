@@ -11,8 +11,6 @@ export class CharactersService {
   constructor(private http: HttpClient) {}
 
   public getAll(page: number): Observable<CharacterApi> {
-    return this.http
-      .get<CharacterApi>(`https://rickandmortyapi.com/api/character?page=${page}`)
-      .pipe(delay(1000))
+    return this.http.get<CharacterApi>(`https://rickandmortyapi.com/api/character?page=${page}`)
   }
 }
