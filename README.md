@@ -11,5 +11,4 @@
 
 ![6qo24h](https://user-images.githubusercontent.com/85979954/185812366-612537b5-b28c-4004-a216-447e4d80985c.gif)
 
-<img src="https://media.giphy.com/media/VKcGywNWMqTpDUON9g/giphy.gif" width="80" height="80" />
 
